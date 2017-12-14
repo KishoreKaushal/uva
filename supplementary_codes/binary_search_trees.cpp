@@ -32,17 +32,13 @@ public:
     ~BinarySearchTree(){
         clear(root);
     }
-
     void printTree(ostream & out = cout  , int type = INORDER) const;
-
     BinaryNode* treeSearch(const Key &k , BinaryNode *x) const;
     int height(BinaryNode *t );
-
     BinaryNode* findMin(BinaryNode *x = nullptr) const;
     BinaryNode* findMax(BinaryNode *x = nullptr) const;
     BinaryNode* succesor(BinaryNode *x = nullptr) const;
     BinaryNode* predecessor(BinaryNode *x = nullptr) const;
-
     void remove(BinaryNode *z);
     void insert(const Key &k);
     bool contains(const Key &k ) const;
