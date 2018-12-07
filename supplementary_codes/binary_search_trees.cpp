@@ -243,9 +243,9 @@ int main() {
 
     //cout<<endl;
     // removing some of the elements
-    BinarySearchTree<int>::BinaryNode* temp = bst.treeSearch(43 , bst.root);
-    cout<<"What is successor of 43? "<<(bst.successor(temp))->element<<endl;
-    cout<<"What is predecessor of 43? "<<(bst.predecessor(temp))->element<<endl;
+    BinarySearchTree<int>::BinaryNode* temp = bst.treeSearch(1 , bst.root);
+    cout<<"What is successor of 1? "<<(bst.successor(temp))->element<<endl;
+    cout<<"What is predecessor of 1? "<<(bst.predecessor(temp))->element<<endl;
     temp = bst.treeSearch(1 , bst.root);
     cout<<"What is predecessor of 1? ";
     if(bst.predecessor(temp)!=nullptr) cout<<(bst.predecessor(temp))->element<<endl;

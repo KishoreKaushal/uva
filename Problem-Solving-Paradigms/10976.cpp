@@ -5,10 +5,6 @@ using namespace std;
 typedef unsigned long long int luint;
 typedef pair<int,int> ii;
 
-bool comp(ii &a, ii &b) {
-    return a.second < b.second ;
-}
-// 1/2 = 1/6 + 1/3
 void print(const vector<ii> &v,const int &k){
     for(auto itr = v.rbegin() ; itr!=v.rend(); ++itr) {
         cout<<"1/"<<k<<" = "<<"1/"<<(*itr).first<<" + "<<"1/"<<(*itr).second<<endl;
